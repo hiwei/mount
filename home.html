@@ -7,19 +7,16 @@
 <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
-
 	<div class="hamburger">
 		<div></div>
 		<div></div>
 		<div></div>
 	</div>
-
 	<div class="list">
 		<p data-category="1">首頁</p>
 		<p data-category="2">山的小知識</p>
 		<p data-category="3">山難故事</p>
 	</div>
-
 	<div class="home" id="category1"></div>
 	<div class="mount"></div>
 	<div class="fog1"></div>
@@ -156,7 +153,6 @@
 </body>
 <script>
 $(document).ready(function(){
-
 	$('.hamburger').click( function() {
 		$('.hamburger :nth-child(n)').toggleClass('clicked');
 		$('.list').fadeToggle(500);
@@ -173,7 +169,6 @@ $(document).ready(function(){
 			$('.black').fadeToggle(500);
 		}
 	});
-	
 	/*STORY*/
 	$('.story_1').show();
 	$('.last_page').addClass('unclickable');
@@ -231,7 +226,6 @@ $(document).ready(function(){
 		});
 	};
 	last_click();
-	
 	/* GAME */
 	$('.game_0').show();
 	var right_num = 0, game_num = 0;
@@ -279,9 +273,7 @@ $(document).ready(function(){
 			}, 1100);
 		});
 	};
-	next_game_click();
-	
-	
+	next_game_click();	
 });
 </script>
 </html>
