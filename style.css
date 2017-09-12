@@ -1,0 +1,479 @@
+﻿@import url(notosanstc.css);
+@import url(cwtexfangsong.css);
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	width: 100%;
+	font-family: cwTeXFangSong;
+	color: #fff;
+	background: #000;
+}
+body:hover {
+	cursor: default;
+}
+::selection {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.hamburger {
+	z-index: 90;
+	position: absolute;	
+	position: fixed;
+	top: 5vw;
+	right: 5vw;
+	width: 100px;
+	height: 65px;
+}
+.hamburger:hover {
+	cursor: pointer;
+}
+.hamburger :nth-child(1), .hamburger :nth-child(2), .hamburger :nth-child(3){
+	position: fixed;
+	margin-left: 30px;
+	margin-top: 15px;
+	width: 50px;
+	height: 4px;
+	border-radius: 10px;
+	background: #fff;
+	transform: rotate(0deg);
+	transition: transform .5s, margin .5s, width .5s, height .5s, opacity .3s, background .5s;
+}
+.hamburger :nth-child(2) {
+	margin-top: 30px;
+	margin-left: 15px;
+}
+.hamburger :nth-child(3){
+	margin-top: 45px;
+}
+.hamburger:hover  :nth-child(1), .hamburger:hover  :nth-child(2), .hamburger:hover  :nth-child(3){
+	background: #87AFA0;
+}
+.hamburger :nth-child(1).clicked {
+	width: 60px;
+	margin-top: 30px;
+	transform: rotate(45deg);
+}
+.hamburger :nth-child(2).clicked {
+	margin-left: 200px;
+	opacity: 0;
+}
+.hamburger :nth-child(3).clicked {
+	width: 60px;
+	margin-top: 30px;
+	transform: rotate(-45deg);
+}
+.list {
+	z-index: 100;
+	position: absolute;	
+	position: fixed;
+	top: 10vw;
+	right: 6vw;
+	text-align: right;
+	display: none;
+	color: #fff;
+}
+.list p {
+	transition: color .5s;
+	color: #fff;
+}
+.list p:hover {
+	cursor: pointer;
+	color: #87AFA0;
+}
+.notice {
+	width: 100%;
+	text-align: center;
+	color: #87AFA0;
+}
+.home, .mount {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh; 
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.home {
+	z-index: 1;
+	background-image: url('img/home.svg');
+	background-color: none;
+	background-attachment: fixed;
+}
+.mount {
+	top: 25vh;
+	z-index: 2;
+	background-image: url('img/mount.png');
+	transition: background-image 3s;
+}
+.fog1, .fog2 {
+	z-index: 3;
+    width: 100%;
+    height: 100vh;
+	top: 0;
+	left: 100%;
+    position: absolute;
+    background-image: url('img/fog1.png');
+    background-size: cover;
+    animation: play 5s infinite;
+}
+.fog2 {
+    background-image: url('img/fog2.png');
+    animation: play 4s 2s infinite;
+}
+@keyframes play {
+	0% { left: 100%; }
+	25% { left: -100%;}
+	100% { left: -100%;}
+}
+.content {
+	position: absolute;
+	z-index: 10;
+	top: 125vh;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+.content_1, .game, .story {
+	width: 50%;
+	margin: auto;
+	padding: 10vh 1vw;
+	line-height: 120%;
+	text-align: left;
+}
+.content_1 {
+	height: 40vh;
+	margin-top: 20vh;
+}
+.game {
+	margin-top: 20vh;
+	padding-top: 40vh;
+	height: 40vh;
+	text-align: left;
+}
+.game::after {
+	content: "";
+	top: 80vh;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+  	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-image: url('img/game.svg');
+}
+.game_button, .qustion {
+	width: 100%;
+	text-align: center;
+}
+.qustion, .explanation {
+	display: none;
+}
+.explanation.right span::before {
+	display: block;
+	content:'答對了！';
+}
+.explanation.wrong span::before {
+	display: block;
+	content:'答錯了！';
+}
+.right_ans, .wrong_ans, .next_game {
+	display: inline-block;
+	width: 150px;
+	padding: 20px 0px;
+	text-align: center;
+	margin: 100px 50px;
+	background: #fff;
+	border-radius: 10px;
+	color: #000;
+	transition: color 0.5s, background 0.5s;
+}
+.story {
+	padding-top: 20vh;
+	height: 80vh;
+}
+.story::after {
+	content: "";
+	opacity: 0.2;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+  	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-image: url('img/story.jpg');
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	transition: filter 30s, opacity 30s;
+}
+.story.opacity::after {
+	opacity: 1;
+}
+.story.grayscale::after {
+	filter: grayscale(0%);
+}
+.story_box {
+	padding-top: 5vh;
+	display: none;
+}
+.story_bg {
+	position: absolute;
+	z-index: 5;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 600px;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('img/story.jpg');
+}
+.page {
+	text-align: center;
+	width: 100%;
+}
+.last_page, .next_page {
+	display: inline-block;
+	margin: 0 50px;
+	padding: 20px 0px;
+	color: #fff;
+	transition: opacity 0.5s, color 0.5s;
+}
+.last_page.unclickable, .next_page.unclickable {
+	opacity: 0;
+}
+.right_ans:hover, .wrong_ans:hover, .next_game:hover {
+	cursor: pointer;
+	background: #87AFA0;
+}
+.last_page:hover, .next_page:hover {
+	cursor: pointer;
+	color: #87AFA0;
+}
+.last_page.unclickable:hover, .next_page.unclickable:hover {
+	cursor: default;
+}
+.black {
+	z-index: 80;
+	display: none;
+	position: absolute;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .8;
+	background: #000;
+}
+
+/* RWD */
+.list, .notice {
+	font-size: 30pt;
+}
+.content, .game_button, .qustion {
+	font-size: 20pt;
+}
+@media screen and (min-width: 1441px) and (max-width: 1620px) {
+	.list {
+		top: 12vw;
+	}
+	.content_1, .game {
+		height: 50vh;
+		margin-top: 10vh;
+	}
+	.right_ans, .wrong_ans, .next_game {
+		width: 15%;
+		padding: 15px 0px;
+		margin: 70px 30px;
+	}
+	.story {
+		padding-top: 15vh;
+		margin-top: 20vh;
+		height: 90vh;
+	}
+	.list, .notice {
+		font-size: 28pt;
+		line-height: 120%;
+	}
+	.content, .game_button, .qustion {
+		font-size: 18pt;
+	}
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+	.list {
+		top: 15vw;
+		right: 6.5vw;
+	}
+	.hamburger {
+		top: 6vw;
+		right: 5vw;
+	}
+	.content_1, .game, .story {
+		width: 60%;
+	}
+	.content_1, .game {
+		height: 50vh;
+		margin-top: 10vh;
+	}
+	.right_ans, .wrong_ans, .next_game {
+		width: 15%;
+		padding: 15px 0px;
+		margin: 70px 30px;
+	}
+	.story {
+		padding-top: 15vh;
+		margin-top: 20vh;
+		height: 95vh;
+	}
+	.list, .notice {
+		font-size: 26pt;
+		line-height: 120%;
+	}
+	.content, .game_button, .qustion {
+		font-size: 18pt;
+	}
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+	.list {
+		top: 20vw;
+		right: 7vw;
+	}
+	.hamburger {
+		top: 6vw;
+		right: 5vw;
+	}
+	.content_1, .game, .story {
+		width: 70%;
+	}
+	.content_1, .game {
+		height: 40vh;
+		margin-top: 15vh;
+	}
+	.right_ans, .wrong_ans, .next_game {
+		width: 15%;
+		padding: 15px 0px;
+		margin: 50px 25px;
+	}
+	.story {
+		padding-top: 10vh;
+		margin-top: 10vh;
+	}
+	.list, .notice {
+		font-size: 24pt;
+		line-height: 120%;
+	}
+	.content, .game_button, .qustion {
+		font-size: 16pt;
+	}
+}
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+	.list {
+		top: 25vw;
+		right: 8vw;
+	}
+	.hamburger {
+		top: 6vw;
+		right: 5vw;
+	}
+	.content_1, .game, .story {
+		width: 80%;
+	}
+	.content_1, .game {
+		height: 25vh;
+		margin-top: 10vh;
+	}
+	.right_ans, .wrong_ans, .next_game {
+		width: 15%;
+		padding: 15px 0px;
+		margin: 50px 25px;
+	}
+	.story {
+		height: auto;
+	}
+	.story_box {
+		display: block;
+	}
+	.story::after {
+		display: none;
+	}
+	.page {
+		display: none;
+	}
+	.list, .notice {
+		font-size: 22pt;
+		line-height: 120%;
+	}
+	.content, .game_button, .qustion {
+		font-size: 14pt;
+	}
+}
+@media screen and (min-width: 0px) and (max-width: 640px) {
+	.home {
+	//	background-image: url('img/home_1024.jpg');
+	}
+	.list {
+		top: 25vw;
+		right: 10vw;
+	}
+	.hamburger {
+		top: 6vw;
+		right: 3vw;
+	}
+	.hamburger :nth-child(1), .hamburger :nth-child(2), .hamburger :nth-child(3){
+		position: fixed;
+		margin-left: 40px;
+		margin-top: 16px;
+		width: 30px;
+		height: 4px;
+	}
+	.hamburger :nth-child(2) {
+		margin-top: 28px;
+		margin-left: 25px;
+	}
+	.hamburger :nth-child(3){
+		margin-top: 40px;
+	}
+	.hamburger :nth-child(1).clicked, .hamburger :nth-child(3).clicked {
+		width: 40px;
+	}
+	.content_1, .game, .story {
+		width: 85%;
+	}
+	.content_1, .game {
+		height: 30vh;
+		margin-top: 5vh;
+	}
+	.right_ans, .wrong_ans, .next_game {
+		width: 20%;
+		padding: 10px 0px;
+		margin: 50px 20px;
+	}
+	.story {
+		height: auto;
+	}
+	.story_box {
+		display: block;
+	}
+	.story::after {
+		display: none;
+	}
+	.page {
+		display: none;
+	}
+	.list, .notice {
+		font-size: 18pt;
+		line-height: 120%;
+	}
+	.content, .game_button, .qustion {
+		font-size: 12pt;
+	}
+}

@@ -1,0 +1,287 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>Mountain Hard</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<script type="text/javascript" src="jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="hamburger">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+
+	<div class="list">
+		<p data-category="1">首頁</p>
+		<p data-category="2">山的小知識</p>
+		<p data-category="3">山難故事</p>
+	</div>
+
+	<div class="home" id="category1"></div>
+	<div class="mount"></div>
+	<div class="fog1"></div>
+	<div class="fog2"></div>
+	<div class="content">
+		<div class="content_1">
+			<span>
+				<div class="notice">
+					山不可怕，可怕的是無知。<br />
+				</div>
+				<br />
+				<center>／</center><br />
+				<br />
+				台灣山區訂出刁難的入山規則，處處封山，導致台灣人對於登山的知識缺乏。沒有一個國家會阻止人民鍛鍊、充實自己的登山知識與技能，除了台灣。封山、防止人民爬黑山並不會降低山難的發生，只會讓山難越來越多。只有良好的登山教育和完整的搜救收費體制，才能幫助登山運動正向發展。<br />
+			</span>
+		</div>
+		
+		<div class="game" id="category2">
+			<div class="notice explanation game_0">
+				挑戰你對「山」的知識有多少<br />
+				<div class="game_button">
+					<div class="next_game">開始</div>
+				</div>
+			</div>
+			<div class="qustion game_1">
+				迷路時，下切溪谷是正確的保命方式嗎？<br />
+				<div class="game_button">
+					<div class="wrong_ans">是</div><div class="right_ans">不是</div>
+				</div>
+			</div>
+			<div class="explanation game_2">
+				<span>最好是往稜線走，因為稜線透空性高，比山谷地形來得寬廣，被尋獲的機率高。而台灣溪谷地形非常陡峭，幾乎都是下的去上不來，很容易被困在絕境中，溪谷也是搜救隊最難找到的死角。</span><br />
+				<div class="game_button">
+					<div class="next_game">了解</div>
+				</div>
+			</div>
+			<div class="qustion game_3">
+				高山症絕對有效的治療方法，就是高度的下降？<br />
+				<div class="game_button">
+					<div class="right_ans">是</div><div class="wrong_ans">不是</div>
+				</div>
+			</div>
+			<div class="explanation game_4">
+				<span>高山症是人體在超過兩千五百公尺或比較高海拔的地方，因為氣壓、氧氣等等原因的影響之下，身體來不及適應所產生的狀況，所以下降高度是最好的治療辦法！</span><br />
+				<div class="game_button">
+					<div class="next_game">了解</div>
+				</div>
+			</div>
+			<div class="qustion game_5">
+				遇到熊，裝死最有用？<br />
+				<div class="game_button">
+					<div class="wrong_ans">是</div><div class="right_ans">不是</div>
+				</div>
+			</div>
+			<div class="explanation game_6">
+				<span>遇到熊時保持鎮靜，不要和熊對視，不要做出突然的舉動，大多數時候熊並沒有侵略性。冷靜地評估一下周圍的環境，確定出逃生的路線，再緩慢地順著風倒退著離開，避免牠根據氣味進行追蹤。</span><br />
+				<div class="game_button">
+					<div class="next_game">了解</div>
+				</div>
+			</div>
+			<div class="qustion game_7">
+				沒 SIM 卡仍可撥打 112 緊急電話求助？<br />
+				<div class="game_button">
+					<div class="right_ans">是</div><div class="wrong_ans">不是</div>
+				</div>
+			</div>
+			<div class="explanation game_8">
+				<span>112 為全球手機均可撥打的緊急救難號碼，即使無 SIM 卡，只要手機尚有電力並在信號涵蓋範圍內，即使訊號微弱亦可撥打。</span><br />
+				<div class="game_button">
+					<div class="next_game">了解</div>
+				</div>
+			</div>
+			<div class="qustion game_9">
+				爬到滿身汗而停下休息時，趕快補充大量水分解渴？<br />
+				<div class="game_button">
+					<div class="wrong_ans">是</div><div class="right_ans">不是</div>
+				</div>
+			</div>
+			<div class="explanation game_10">
+				<span>由於大量流汗會流失電解質，此時大量補充水分會加速電解質的流失，嚴重時甚至可能會造成休克。</span><br />
+				<div class="game_button">
+					<div class="next_game">了解</div>
+				</div>
+			</div>
+			<div class="notice explanation game_11">
+				<span></span><br />
+			</div>
+		</div>
+		
+		<div class="story" id="category3">
+			<div class="notice">世界第二大山難　／　卡瓦格博峰山難<br /><br /></div>
+			<div class="page">
+				<div class="last_page">◀</div><div class="next_page">▶</div>
+			</div>
+			<div class="story_box story_1">
+				　　卡瓦格博海拔 6,740 米，是雲南最高峰。對登山界來說，海拔七千米以下的山峰是不被列入登山名單的，但只有卡瓦格博是例外。在一百多年的現代登山史上，十四座八千米以上的山峰、幾十座七千米以上的山峰都被印上登山者足跡之後，唯有這座 6,740 米的山峰仍然保持著她的聖潔，在一次次失敗的嘗試之後，拒絕人類的染指。<br />
+				<br />
+				　　十幾年前，這座山峰幾乎不為外界所知，雖然歷史上的最著名的茶馬古道就經過這裡遠去西藏。一九八七年，日本人向中國國家體委提出攀登卡瓦格博的申請，當地藏民按自己的方式生活著，維護著世世代代所敬仰的神靈寓所。直到一九九一年的一場重大山難，才打破了神山亙古的寧靜。<br />
+			</div>
+			<div class="story_box story_2">
+				　　一九八七年的夏季，一支由中國和日本聯合組成的隊伍來到了雪山腳下，對這座美麗的雪山和村民古老的生活方式驚嘆不已。他們告訴村民們是來攀登梅里雪山，村民們不知梅里雪山在哪裡，更不知道世界上還有一種運動叫登山。友誼一直持續著，直到藏民知道了他們的來歷。<br />
+				<br />
+				　　登山隊包括多個學科的科學家，用了兩年時間對卡瓦格博進行了一系列的地質學、動植物學以及氣象學的考察，只是不知道他們是否真正了解神山對於當地人生活的意義。當藏民們終於知道了他們要攀登的梅里雪山就是他們心中的神山「卡瓦格博」，受到的震驚是前所未有的。<br />
+				<br />
+				　　「我們稱神山叫阿尼卡瓦格博，意思是卡瓦格博爺爺。既然是爺爺，你怎麼能爬到他的頭上呢？對神山不敬，神靈就會離開我們，災難就會降臨。」尼瑪是位藏族民間研究者，是當地致力於保護卡瓦格博神山的人士之一。在當地文化里，敬仰神山能減少罪過增加積德，保佑家人及所有生命平安。<br />
+			</div>
+			<div class="story_box story_3">
+				　　一九九零年冬天來臨，中日聯合登山隊在周密調查的基礎上制定了攀登路線。12 月 28 日，突擊隊五名隊員接近主峰背後的山脊到達 6,200 米，這是卡瓦格博從未有過的攀登高度。然而，此時天氣突然轉壞，烏雲遮沒了山頂。到達 6,470 米時，中方隊長宋志義感覺東南方向好像有雲層向他們壓過來。峰頂就在眼前，垂直距離只有 270 米，隨著烏雲的到來，氣溫急劇下降，五名突擊隊員被凍得渾身顫抖。突擊隊迫不得已拉起了簡易帳蓬以避風寒。下午四點風雪肆虐，絲毫沒有停止的跡象。井上只能痛苦地命令：取消行動，返回三號營地。但山頂被黑雲籠罩著，漫天風雪中五名隊員徹底迷失了方向。隊員們幾次試圖衝出黑暗，都因無法辨別方向而被迫放棄。<br />
+				<br />
+				　　藏民得知登山隊即將登頂的消息，此時已經不再針對登山隊了，而是將他們的不滿對著卡瓦格博。那時老百姓不知該怎麼表達他們的憤怒，他們說：「阿尼卡瓦格博，顯示出你的神威吧，否則，我們就不再敬你了！」，成千上萬的喇嘛以及藏民在飛來寺詛咒登山隊，信仰的力量以及各式各樣的傳說讓這次登山充滿了宿命的意義。<br />
+			</div>
+			<div class="story_box story_4">
+				　　幾日後的一大早，登山隊中方聯繫官的張俊在醒來後感到四周有一種出奇的安靜，隨著時間一分一秒地過去，大本營的工作人員開始緊張起來。三號營地的十七個人都是很有經驗的登山者，且對講機不可能同時出問題，出發以來四十多天內從來沒有發生過。<br />
+				<br />
+				　　正在這時，大本營附近發生了一次不大的雪崩，這讓焦急中等待的隊員又平添了一絲恐懼。十七名隊友在一夜之間就悄無聲息地和大本營失去了聯繫，這是一個難以接受的事實。大本營屬於後勤人員，他們唯一能做的就是被動等待。連日的大雪到了這天突然停了，天空放晴，一絲雲彩也沒有。接下來的四天整個梅里雪山晴空萬里。張俊無奈而傷感地說：「如果真有神靈，神靈給了我們四天的時間，但我們沒有抓住。等到救援隊來了，天一下子就變陰了，連日暴風雪。這又成了一個最符合藏民反對我們登山的理由。」<br />
+			</div>
+			<div class="story_box story_5">
+				　　五天後來了一架偵察機乘雲層散開的瞬間，在高空飛了幾個來回，拍了照片，判斷是雪崩。京都大學的救援隊也到了，可是西藏隊上不去，日本隊就更上不去了。1 月 21 日，指揮部正式宣布十七名隊員失蹤，搜救行動失敗。22 號救援隊宣布撤離。<br />
+				<br />
+				　　就在宣布搜救失敗、指揮部下撤的當天，大本營附近發生了一場可怕的雪崩。一片寬 300 米、長 400 米的冷杉林，樹的直徑都在 50 厘米以上，雪崩過後，杉樹林齊刷刷地倒伏在地，一棵不剩。在那裡放牧的老鄉說：這片樹林並沒有在發生雪崩線路上，僅僅是雪崩的氣浪就把樹林摧毀了。老百姓說，這是神山的又一次警告。然而山難卻使卡瓦格博越顯神秘。<br />
+				<br />
+				　　而後一九九六年，京都大學登山隊再次進入卡瓦格博，但仍以失敗告終。隔年 2 月 6 日的《迪慶日報》寫到：日本京都大學登山隊將永遠放棄梅里雪山。<br />
+			</div>
+			<div class="story_box story_6">
+				　　藏族同胞對卡瓦格博神山的敬畏之情是我們不能想像的，他們甚至不用手指著梅里雪山說話！有位藏族同胞說：「我們反對政府讓人攀登我們的神山，如果有一天因為你們的無知，讓神山發怒，攀登者可以走，遊客可以走，政府要員可以走，但是走不了的是這裡無辜的山裡人，他們仍然生活在這裡，獨自承當後果。神山不是屬於政府的，政府無權讓誰可以去攀登，神山是屬於整個佛教信徒的！」當年，當登山隊快要攀登到梅里雪山的頂峰時，確實在梅里雪山下的飛來寺有好幾萬群眾祈禱不要讓人攀登上去！<br />
+				<br />
+				　　最終，在二零零一年，正式立法：不再允許攀登卡瓦格博神山。<br />
+				<br />
+				　　當地的居民為了尊敬神明，都稱這座山為「不眠山」。意思是上了這座山的人即使死後依舊無法獲得自由，要成為這座山的僕人七年，在第八年才能真正得到安息。當時的十七名隊員和三號營地消失了，沒有留下任何痕跡。他們的下落成了世界登山界的一個不解之謎。但七年之後，竟然陸續出現在卡瓦格博下的明永冰川。<br />
+			</div>
+		</div>
+	</div>
+	<div class="black"></div>
+</body>
+<script>
+$(document).ready(function(){
+
+	$('.hamburger').click( function() {
+		$('.hamburger :nth-child(n)').toggleClass('clicked');
+		$('.list').fadeToggle(500);
+		if ($(window).width() < 1281) {
+			$('.black').fadeToggle(500);
+		}
+	});
+	$('.list :nth-child(n)').click( function() {
+		var category_num = $(this).data('category');
+		$('html, body').animate({ scrollTop: $( '#category' + category_num ).offset().top }, 1000);
+		$('.hamburger :nth-child(n)').toggleClass('clicked');
+		$('.list').fadeToggle(500);
+		if ($(window).width() < 1281) {
+			$('.black').fadeToggle(500);
+		}
+	});
+	
+	/*STORY*/
+	$('.story_1').show();
+	$('.last_page').addClass('unclickable');
+	var page_num = 1;
+	var next_click = function() {
+		$('.next_page').click(function() {
+			if ( page_num != 6 ) {
+				$(this).unbind();
+				$('.story_' + page_num).fadeOut(500);
+				page_num += 1;
+				$('.story_' + page_num).delay(600).fadeIn(500);			
+				setTimeout(function() {
+					next_click();
+				}, 1100);
+			}
+			if ( page_num == 6 ) {
+				$('.next_page').addClass('unclickable');
+			}
+			if ( page_num == 2 ) {
+				$('.last_page').removeClass('unclickable');
+			}
+			if ( page_num == 5 ) {
+				$('.story').addClass('opacity');
+			}
+			if ( page_num == 6 ) {
+				$('.story').addClass('grayscale');
+			}
+		});
+	};
+	next_click();
+
+	var last_click = function() {
+		$('.last_page').click(function() {
+			if ( page_num != 1 ) {
+				$(this).unbind();
+				$('.story_' + page_num).fadeOut(500);
+				page_num -= 1;
+				$('.story_' + page_num).delay(600).fadeIn(500);			
+				setTimeout(function() {
+					last_click();
+				}, 1100);
+			}
+			if ( page_num == 1 ) {
+				$('.last_page').addClass('unclickable');
+			}
+			if ( page_num == 5 ) {
+				$('.next_page').removeClass('unclickable');
+			}
+			if ( page_num == 4 ) {
+				$('.story').removeClass('opacity');
+			}
+			if ( page_num == 5 ) {
+				$('.story').removeClass('grayscale');
+			}
+		});
+	};
+	last_click();
+	
+	/* GAME */
+	$('.game_0').show();
+	var right_num = 0, game_num = 0;
+	var wrong_click = function() {
+		$('.wrong_ans').click(function() {
+			$('.wrong_ans').unbind();
+			$('.game_' + game_num).fadeOut(500);
+			game_num += 1;
+			$('.game_' + game_num).delay(600).fadeIn(500);
+			$('.explanation').addClass('wrong');
+			setTimeout(function() {
+				wrong_click();
+			}, 1100);
+		});
+	};
+	wrong_click();
+	
+	var right_click = function() {
+		$('.right_ans').click(function() {
+			$('.right_ans').unbind();
+			$('.game_' + game_num).fadeOut(500);
+			game_num += 1;
+			right_num += 1;
+			$('.game_' + game_num).delay(600).fadeIn(500);
+			$('.explanation').addClass('right');
+			setTimeout(function() {
+				right_click();
+			}, 1100);
+		});
+	};
+	right_click();
+
+	var next_game_click = function() {
+		$('.next_game').click(function() {
+			$('.next_game').unbind();
+			$('.game_' + game_num).fadeOut(500);
+			game_num += 1;
+			$('.game_' + game_num).delay(600).fadeIn(500);
+			if ( game_num == 11 ) {
+				$('.game_11').html('總共答對了 ' + right_num + ' 題！')
+			}
+			setTimeout(function(){
+				next_game_click();
+				$('.explanation').removeClass('right, wrong');
+			}, 1100);
+		});
+	};
+	next_game_click();
+	
+	
+});
+</script>
+</html>
