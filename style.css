@@ -1,4 +1,4 @@
-﻿@import url(notosanstc.css);
+@import url(notosanstc.css);
 @import url(cwtexfangsong.css);
 
 body {
@@ -376,6 +376,9 @@ body:hover {
 	}
 }
 @media screen and (min-width: 641px) and (max-width: 1024px) {
+	.fog1, .fog2 {
+		display: none;
+	}
 	.list {
 		top: 25vw;
 		right: 8vw;
@@ -409,7 +412,7 @@ body:hover {
 		display: none;
 	}
 	.list, .notice {
-		font-size: 22pt;
+		font-size: 20pt;
 		line-height: 120%;
 	}
 	.content, .game_button, .qustion {
@@ -418,7 +421,15 @@ body:hover {
 }
 @media screen and (min-width: 0px) and (max-width: 640px) {
 	.home {
+	background-size: auto 100%;
 	//	background-image: url('img/home_1024.jpg');
+	}
+	.mount {
+		top: 15vh;
+		background-image: url('img/mount_1024.png');
+	}
+	.fog1, .fog2 {
+		display: none;
 	}
 	.list {
 		top: 25vw;
@@ -448,9 +459,14 @@ body:hover {
 	.content_1, .game, .story {
 		width: 85%;
 	}
-	.content_1, .game {
+	.content_1 {
 		height: 30vh;
 		margin-top: 5vh;
+	}
+	.game {
+		height: 30vh;
+		margin-top: 30vh;
+		padding-top: 50vh;
 	}
 	.right_ans, .wrong_ans, .next_game {
 		width: 20%;
@@ -458,6 +474,7 @@ body:hover {
 		margin: 50px 20px;
 	}
 	.story {
+		margin-top: 20vh;
 		height: auto;
 	}
 	.story_box {
@@ -470,7 +487,7 @@ body:hover {
 		display: none;
 	}
 	.list, .notice {
-		font-size: 18pt;
+		font-size: 16pt;
 		line-height: 120%;
 	}
 	.content, .game_button, .qustion {
