@@ -376,6 +376,14 @@ body:hover {
 	}
 }
 @media screen and (min-width: 641px) and (max-width: 1024px) {
+	.home {
+		background-size: auto 100vh;
+		background-attachment: initial;
+	}
+	.mount {
+		top: 10vh;
+		background-image: url('img/mount_1024.png');
+	}
 	.fog1, .fog2 {
 		display: none;
 	}
@@ -422,7 +430,7 @@ body:hover {
 @media screen and (min-width: 0px) and (max-width: 640px) {
 	.home {
 		background-size: auto 100vh;
-		background-attachment: scroll;
+		background-attachment: initial;
 	}
 	.mount {
 		top: 0vh;
@@ -481,6 +489,9 @@ body:hover {
 		display: block;
 	}
 	.story::after {
+		display: none;
+	}
+	.story span {
 		display: none;
 	}
 	.page {
