@@ -421,11 +421,11 @@ body:hover {
 }
 @media screen and (min-width: 0px) and (max-width: 640px) {
 	.home {
-	background-size: auto 100vh;
-	//	background-image: url('img/home_1024.jpg');
+		background-size: auto 100vh;
+		background-attachment: scroll;
 	}
 	.mount {
-		top: 15vh;
+		top: 0vh;
 		background-image: url('img/mount_1024.png');
 	}
 	.fog1, .fog2 {
@@ -461,12 +461,12 @@ body:hover {
 	}
 	.content_1 {
 		height: 30vh;
-		margin-top: 5vh;
+		margin-top: 0vh;
 	}
 	.game {
 		height: 30vh;
 		margin-top: 30vh;
-		padding-top: 50vh;
+		padding-top: 40vh;
 	}
 	.right_ans, .wrong_ans, .next_game {
 		width: 20%;
